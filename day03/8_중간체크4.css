@@ -1,0 +1,14 @@
+
+li{ list-style-type: none;}
+*{ padding: 0px; margin: 0px;}
+body{
+    text-align: center;
+}
+.insta{
+    border: 1px solid #eeeeee;
+    width: 400px;
+    margin: 20px auto   ;
+}
+.instaLogo{
+    width: 400px;
+}
