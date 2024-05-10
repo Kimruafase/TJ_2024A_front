@@ -29,6 +29,9 @@ a{
 #subImage1, #subImage2, 
 #subImage3, #subImage4{
     width: 300px;
+    display: flex;
+    margin: 10px 10px auto;
+    align-items: center;
 }
 #mainImg{
     width: 800px;
@@ -39,7 +42,7 @@ a{
     width: 250px;
 }
 #sidemenu >ul > h3{
-    background-color: gray;
+    background-color: rgb(69, 69, 214);
     font-size: 20px;
     padding: 15px;
 }
@@ -50,9 +53,25 @@ a{
 #mainTxt{
     width: 1000px;
 }
-#mainTxt > p{
+#mainTxt > p , #maindown > p{
     width: 800px;
     margin: 0 auto;
     border-bottom: 2px solid #eeeeee;
     padding: 10px;
+}
+#maindown{
+    align-items: flex-end;
+}
+#mainSub{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#mainsub{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#subImage4{
+    height: 200px;
 }
