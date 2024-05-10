@@ -1,0 +1,100 @@
+/* 기본 여백 제거 , 글머리 제거 */
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+/* 구역 사이즈 (테두리 기준) */
+*{
+    box-sizing: border-box;
+}
+/* a마크업 기본값 제거 */
+a{
+    text-decoration: none;
+    color: black;
+}
+/* 확인용 */
+/* *{
+    border: 1px solid red;
+} */
+/* ================= 1. 헤더 ================= */
+#header{
+    width: 1280px;
+    margin: 30px auto;
+    /* 하위 요소들의 배치 방법 */
+    display: flex;
+    /* 양쪽 끝에 균등 정렬 */
+    justify-content: space-between;
+    /* 세로 가운데 정렬 */
+    align-items: center;
+}
+#topmenu{
+    display: flex;
+    /* flex 요소 바깥쪽 정렬 */
+    justify-content: flex-end;
+    margin: 10px 0px;
+    font-size: 10px;
+}
+#topmenu > li{
+    margin-left: 20px; /* li 마다 왼쪽 바깥 여백 */
+}
+#mainmenu{
+    display: flex;
+    /* 바깥 여백 */
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#mainmenu > li{
+    margin-left: 60px;
+}
+/* ================= 2. 메인 이미지 ============= */
+#mainImg{
+    width: 100%;
+}
+/* ================== 3. 본문 ================== */
+#contents{
+    width: 1280px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#aside{
+    width: 250px;
+}
+#aside >ul> h3{
+    background-color: gray;
+    font-size: 20px;
+    padding: 15px;
+}
+#aside > ul > li{
+    border-bottom: 2px solid #eeeeee;
+    padding: 10px;
+}
+#mainContents{
+    width: 1000px;
+}
+#mainContents > h3{
+    border-bottom: 2px solid gray;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+#mainContents > img{
+    /* display : inline; 인 경우 
+    margin : 0 auto; 적용 불가능 */
+    display: block;
+    margin: 0 auto;
+}
+/* ================== 4. 푸터 ================== */
+#footer{
+    background-color: #2c2a29;
+}
+#footerContents{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    padding: 30px 0px;
+}

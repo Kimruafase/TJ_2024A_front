@@ -1,0 +1,36 @@
+*{
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#wrap{
+    /* 페이지 전체 사이즈 */
+    width: 1280px;
+    /* 구역 가운데 정렬 */
+    margin: 50px auto;
+}
+#header{
+    background-color: beige;
+}
+#main{
+    background-color: rgb(5, 5, 112);
+    color: white;
+    /* 자식 요소들의 배치 방법 */
+    display: flex;
+    /* [기본값] 생략 가능 */
+    flex-direction:  row;
+    /* [기본값] 생략 가능 */
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#footer{
+    background-color: black;
+    color:white
+}
+#contents{
+    width: 900px;
+}
+#aside{
+    width: 300px;
+}

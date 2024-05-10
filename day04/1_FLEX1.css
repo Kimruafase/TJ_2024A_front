@@ -1,0 +1,64 @@
+
+/* 구역 사이즈를 안쪽 여백 + 테두리 포함 */
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    border: 2px solid blue;
+    width: 100px;
+}
+
+/* 1. flexbox1 */
+.flexbox1{
+    border: 3px solid red;
+    display: flex; /* 하위 요소들의 배치 방법 */
+    /* 기본값 : 줄 바꿈 안 함 , 
+    자식 요소들을 한 줄 표시 하되 
+    사이즈가 부족하면 자동 변경 */
+    flex-wrap: nowrap; 
+    width: 250px;
+}
+
+.flexbox2{
+    border: 3px solid red;
+    display: flex;
+    /* 자식 요소들의 크기가 넘쳤을 때
+    줄 바꿈 처리 자동*/
+    flex-wrap: wrap; 
+    width: 250px;
+}
+.flexbox3{
+    border: 3px solid red;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 250px;
+}
+.flexbox4{
+    border: 3px solid red;
+    width: 250px;
+    display: flex;
+    /* 배치 방향 : row (기본값) 가로 배치 */
+    flex-direction: row; 
+}
+.flexbox5{
+    border: 3px solid red;
+    width: 250px;
+    display: flex;
+    /* 배치 방향 : column 세로 방향 */
+    flex-direction: column;
+}
+.flexbox6{
+    border: 3px solid red;
+    width: 250px;
+    display: flex;
+    /* 배치 방향 : row-reverse 가로 반대 방향 */
+    flex-direction: row-reverse;
+}
+.flexbox7{
+    border: 3px solid red;
+    width: 250px;
+    display: flex;
+    /* 배치 방향 : column-reverse 세로 반대 방향 */
+    flex-direction: column-reverse;
+}

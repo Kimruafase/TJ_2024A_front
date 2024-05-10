@@ -9,36 +9,37 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <ul class="insta">
+    <ul>
         <li>
             <img class = "instaLogo" src="인스타그램.png">
         </li>
 
         <li>
-            <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+            <input class="instaLogin" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
         </li>
         
         <li>
-            <input type="password" placeholder="비밀번호"/>
+            <input class="instaLogin" type="password" placeholder="비밀번호"/>
         </li>
 
-        <li>
-            <a href="#"> 로그인 </a>
+        <li class="instaLoginBox">
+            <a class="instaLoginBtn" href="#"> 로그인 </a>
         </li>
 
-        <li>
-           <img src = "페이스북.png"> <a href="#"> Facebook으로 로그인 </a>
+        <li class="instaFaceLi">
+           <img class="instaFace" src = "페이스북.png"> 
+           <a class="instaFaceLogin" href="#"> Facebook으로 로그인 </a>
         </li>
 
-        <li>
-            <a href="#"> 비밀번호를 잊으셨나요? </a>
+        <li class="instaPassword">
+            <a class="instaPassword" href="#"> 비밀번호를 잊으셨나요? </a>
         </li>
 
     </ul>
 
-    <ul>
+    <ul class="instaSignUp">
         <li>
-            계정이 없으신가요? <a href="#"> 가입하기 </a>
+            계정이 없으신가요? <a class="instaSignUpLink" href="#"> 가입하기 </a>
         </li>
     </ul>
 </body>
