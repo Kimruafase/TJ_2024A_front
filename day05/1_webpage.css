@@ -1,0 +1,187 @@
+/*
+    협업 시 공통 ( 모든 페이지 같이 적용할 CSS ) 
+        1. 웹페이지 내 컨텐츠 전체 사이즈 : pc( 1000 ~ 1300 )px
+        2. 폰트
+        3. 색상 테마
+        4. 레이아웃
+    CSS
+        선택자 {속성명:값;}
+
+*/
+/* 기본 css 세팅 : 글꼴, 안쪽 여백, 바깥 여백, 구역 사이즈 기준 */
+*{
+    font-family: "굴림";
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+li{
+    /* 글 머리 제거 */
+    list-style-type: none; 
+}
+a{
+    /* a 마크업의 밑줄 제거, 색상 결정*/
+    text-decoration: none;  
+    color:black;
+}
+/* 작업용 : 추후에 완성 시 제거 */
+/* *{
+    border: 2px solid red;
+} */
+/* 레이아웃 용도 */
+#header{
+    width: 1280px;
+    /* margin: 0 auto; vs text-align: center;*/
+    margin: 0 auto;
+}
+#content{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 1. 헤더 */
+#header{
+    /* 하위 요소들의 배치 방법 */
+    display: flex; 
+    /* 양 끝 여백 없이 가로 균등 정렬 */
+    justify-content: space-between;
+    /* 세로 정렬 */
+    align-items: center;
+    margin-top: 20px;
+}
+#topMenu{
+    display: flex;
+    justify-content: flex-end;
+}
+#mainMenu{
+    display: flex;
+    justify-content: flex-end;
+}
+#mainMenu > li{ /* 상위 선택자 > 하위 선택자*/
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+/* 이미지를 가운데 정렬하는 방법 1 */
+/* #mainImg{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+} */
+/* 이미지를 가운데 정렬하는 방법 2 */
+#mainImg{
+    /* 구역 사이즈 */
+    width: 100%;
+    height: 300px;
+    margin: 30px 0px;
+    /* 구역 배경 이미지 */
+    background-image: url(img/main_bg.png);
+    /* 배경 자동 채우기 : 배경 이미지 보다 구역의 크기가 컸을 때 이미지를 반복 지우기 */
+    background-repeat: no-repeat;
+    /* 배경 위치 */
+    background-position: center;
+}
+#content{
+    display: flex;
+    justify-content: space-between;
+}
+#sideBar{
+    /* 부모 요소 [1280px]에서 자식 요소들이 나눠서 결정 */
+    width: 250px;
+}
+#mainContent{
+    /* 부모 요소 [1280px]에서 자식 요소들이 나눠서 결정 */
+    width: 1010px;
+    display: flex;
+    justify-content: space-between;
+}
+#sideBar > h3 {
+    background-color: #0ca9a2;
+    color : white;
+    font-size: 20px;
+    padding: 15px;
+}
+#sideBar > p{
+    padding: 15px;
+    line-height: 150%;
+}
+#sideBar > .searchInput{
+    width: 170px; height: 30px;
+    /* 둥근 모서리 */
+    border-radius: 10px;
+    margin-left: 15px;
+    padding: 10px;
+}
+#sideBar > .searchBtn{
+    margin-left: 5px;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+#sideBar > h4{
+    border-top: solid 2px black;
+    border-bottom: solid 1px #eeeeee;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#sideBar > ul > li{
+    padding: 10px 15px;
+}
+#mainContent > #leftContent{
+    width: 500px;
+}
+#mainContent h3{
+    border-bottom: solid 2px black;
+    padding: 10px;
+}
+#leftContent > .board{
+    margin: 10px 0px 50px 0px;
+}
+#leftContent > .board > li{
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+}
+#mainContent > #rightContent{
+    width: 500px;
+}
+#productList{
+    display: flex;
+    /* 만약 자식 요소들이 부모의 사이즈보다 커지면 자동 줄 바꿈 */
+    flex-wrap: wrap;
+}
+#productList > .product{
+    width: 200px;
+    margin: 20px;
+}
+#footer{
+    background-color: #05344e;
+    color: white;
+    height: 300px;
+    padding: 30px 0px;
+}
+#footerInfo{
+    width: 1280px;
+    margin: 0 auto;
+}
+#footerContents > li > a{
+    color: white;
+}
+#footerContents{
+    display: flex;
+}
+#footerContents > li{
+    margin-right: 50px;
+}
+#footerInfo2{
+    display: flex;
+    margin: 30px 0px;
+    justify-content: space-between;
+}
+#footerInfo2 h4{
+    margin-bottom: 10px;
+}
+#footerInfo2 li{
+    margin: 5px 0px;
+}
