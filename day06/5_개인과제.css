@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Noto Sans KR", sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+}
+*{ 
+    /* 글머리 제거 */
+    list-style-type: none; 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:"Noto Sans KR";
+    font-size: 12px;
+}  
+a{ 
+    /* a마크업의 밑줄제거,색상 검정*/
+    text-decoration: none; 
+    color: black;
+}
+/* 작업용 */
+/* *{
+    border: 1px solid red;
+} */
+#W{
+    width: 100%;
+}
+/* #H{
+    width: 1920px;
+    margin: 0 auto;
+} */
+#C{
+    width: 100%
+}
+/*------------------------ 헤더 ---------------------------*/
+#HT{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 20px 0px 40px;
+
+}
+#HT li {
+    padding: 10px;
+    height: 44px;
+}
+#HT li > a{
+    margin: 10px 15px 10px 0px;
+}
+#HT li > #HTA{
+    padding-left: 10px;
+}
+#HT input{
+    background-color: #f5ff6b;
+    border: none;
+}
+#HT li img{
+    width: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 3px;
+}
+#HB{
+    border-top: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px 0px 40px;
+}
+#HBL{
+    width: 155px;
+    margin-right: 10px;
+}
+#HBS  img{
+    width: 18px;
+}
+#HB  ul{
+    display: flex;
+    width: 85%;
+}
+#HB ul > li{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+}
+#HB #HBN{
+    color: red;
+}
+#HBC{
+    position: relative;
+    right: 170px;
+}
+#HBS{
+    border-bottom: 1px solid black;
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#HBS input{
+    border: none;
+    padding: 5px;
+    width: 140px;
+}
+/*-------------------------- 드롭 메뉴 ----------------------------*/
+#HB ul > li{
+    position: relative;
+}
+.HBCS{
+    height: auto;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#HB .HBCS{
+    position: absolute;
+    background-color: white;
+    top: 80px;
+    width: 130%;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+#HB .HBCS > li {
+    height: 20px;
+    margin: 3px 0px;
+}
+#HB ul > li:hover .HBCS{
+    display: flex;
+}
+/*---------------------------- 메인 이미지 ------------------------------*/
+#Mimg{
+    width: 100%;
+}
+/*------------------------------ 콘텐츠 -----------------------------------*/
