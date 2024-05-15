@@ -1,0 +1,268 @@
+/* ============= 공통 CSS ============= */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+/* ============= 레이아웃용 CSS =========== */
+#header{
+    width: 100%;
+}
+#content{
+    width: 1600px;
+    margin: 0 auto;
+}
+#footer{
+    width: 100%;
+}
+/* ============== 작업용 CSS ============== */
+/* *{
+    border: 1px solid red;
+} */
+/* #header{
+    height: 200px;
+}
+#content{
+    height: 1000px;
+}
+#footer{
+    height: 200px;
+} */
+/* ======================= 헤더 상단 메뉴 ====================== */
+#topMenu{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 40px;
+    border-bottom: 1px solid #dbdbdb;
+}
+#topMenu > li > span{
+    padding: 0px 15px;
+}
+#topMenu > li img{
+    width: 20px;
+    margin: 2px 10px 0px 0px;
+}
+/* ========================= 헤더 본 메뉴 ======================= */
+#mainMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+#mainMenu .Logo{
+    width: 155px;
+}
+#mainMenu > ul{
+    display: flex;
+    font-weight: bold;
+    width: 80%;
+}
+#mainMenu > ul > li{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 87px;
+}
+#searchBox{
+    border-bottom: 1px solid black;
+}
+#searchBox > input{
+    border: none;
+    padding: 5px;
+    width: 150px;
+}
+#searchBox > img{
+    width: 16px;
+}
+#mainMenu .new{
+    color: red;
+}
+/* 포커스가 활성화됐을 때 테두리(outline) 제거 */
+*:focus{
+    outline: none;
+}
+/* ========================= 드롭 메뉴 ===================== */
+#mainMenu > ul > li{
+    position: relative;
+}
+#mainMenu .subMenu{
+    position: absolute;
+    top: 80px;
+    background-color: white;
+    /* 부모(본 메뉴)의 사이즈보다 1.3배 */
+    width: 130%;
+    text-align: center;
+    /* 서브 메뉴 숨기기 */
+    display: none;
+}
+#mainMenu .subMenu >li{
+    margin: 10px;
+}
+#mainMenu >ul li:hover .subMenu{
+    display: block;
+}
+/* ========================= 메인 이미지 =================== */
+#mainImg{
+    width: 100%;
+}
+/* ========================= sticky ======================= */
+#mainMenu{
+    /* 스크롤 내릴 시 위치 고정 */
+    position: sticky;
+    /* 최상단 */
+    top: 0px;
+    /*
+        sticky 사용조건
+            1. sticky > 상위 부모의 높이 사이즈 안에서 고정
+                vs fixed > 특정 요소와 상관 없이 디바이스 고정
+            2. top, right, left, bottom 위치 속성 1개 이상 필수!
+            3. 부모요소가 overflow 속성 사용 금지
+    */
+    background-color: #fff;
+    /* 투명도 > 100% 이면 투명도 X */
+    opacity: 80%;
+}
+/* ============================ 본문 ======================= */
+#content > h3 , #content > p{
+    margin: 0 auto;
+    width: 200px;
+    height: 0px;
+    padding: 20px 0px;
+    text-align: center;
+    color: #dbdbdb;
+}
+#content > h3{
+    font-weight: bold;
+    margin-top: 60px;
+    font-size: 17px;
+}
+#content > p{
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+/* items(1600) -> 한줄에 4개씩이므로 4로 나누기, 여백 조금 빼기 */
+#items > .item{
+    width: 380px;
+    margin: 30px 0px;
+}
+#items > .item > .itemImg{
+    width: 100%;
+}
+#items .color > span{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px solid #dbdbdb;
+}
+#items .colorReview{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+#items .review{
+    color: #999999;
+}
+#items .itemName{
+    margin: 5px 0px;
+}
+#items .itemName > .size{
+    font-size: 10px;
+    color: #999999;
+    margin: 1px 0px;
+}
+#items .itemPrice{
+    position: relative;
+    margin: 5px 0px;
+}
+#items .disc{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+#items .price{
+    text-decoration: line-through;
+    color: #999999;
+}
+#items{
+    width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* ======================== 푸터 ================================ */
+#footerT{
+    background-color: #f7f7f7;
+    padding: 50px 0px;
+}
+#footerB{
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    margin: 30px 0px;
+    line-height: 160%;
+}
+#footerC{
+    width: 1400px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+#footerC h3{
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#footerC h4{
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#footerC ul > li{
+    margin-bottom: 10px;
+}
+/* ======================== 팝업 ================================ */
+#popup{
+    position: fixed;
+    /* 오른쪽 가운데 */
+    right: 0px;
+    top: 30%;
+}
+#popup img{
+    height: 20px;
+}
+#popup > ul > li{
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    background-color: #f7f7f7;
+    position: relative;
+}
+/* 팝업 hover*/
+#popup > ul > li > span{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    width: 80px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+#popup > ul > li:hover .popupSub{
+    display: inline;
+}

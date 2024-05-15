@@ -1,0 +1,68 @@
+#popup{
+    background-color: skyblue;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 2;
+}
+
+/* ========================================================= */
+#header{
+    display: flex;
+    border-bottom: 2px solid gray;
+    background-color: white;
+    /* 해당 구역이 가려질 때 위치 고정 */
+    position: sticky;
+    /* top : 0px 면 상단에 고정 */
+    top: 0px;
+    /* 다른 요소와 겹쳤을 때에 대한 우선 순위 */
+    z-index: 3;
+}
+#header > ul{
+    display: flex;
+}
+/* ========================================================== */
+#parent{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: aqua;
+    /* 하위 요소들의 abusolute 기준점 */
+    position: relative;
+}
+#box1, #box2, #box3,
+#box4, #box5, #box6{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+}
+#box1{
+    right: 200px;
+    top: 25px;
+}
+#box2{
+    right: 325px;
+    top: 125px;
+}
+#box3{
+    top: 125px;
+    right: 75px
+}
+#box4{
+    top: 250px;
+    right: 325px;
+}
+#box5{
+    top: 250px;
+    right: 75px;
+}
+#box6{
+    right: 200px;
+    top: 350px;
+}
