@@ -101,6 +101,15 @@ a{
     padding: 5px;
     width: 140px;
 }
+*:focus{
+    outline: none;
+}
+#HB{
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    opacity: 80%;
+}
 /*-------------------------- 드롭 메뉴 ----------------------------*/
 #HB ul > li{
     position: relative;
@@ -132,3 +141,82 @@ a{
     width: 100%;
 }
 /*------------------------------ 콘텐츠 -----------------------------------*/
+#CI{
+    width: 1420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 0px;
+    margin: 0 auto;
+}
+.CT{
+    margin: 0 auto;
+    width: 200px;
+    height: 0px;
+    font-size: 17px;
+    padding: 20px 0px;
+    text-align: center;
+}
+.CE{
+    margin: 0 auto;
+    width: 250px;
+    height: 0px;
+    font-size: 13px;
+    padding: 20px 0px;
+    text-align: center;
+    color: #999;
+    font-weight: normal;
+}
+#CTB a > img{
+    width: 300px;
+}
+#CTB a > #CIH{
+    width: 300px;
+    position: absolute;  
+    top: 30px;
+    left: 88%;
+}
+#CTB{
+    width: 1420px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 30px 0px;
+}
+.CI0{
+    position: relative;
+    right: -15px;
+}
+.CI1{
+    position: relative;
+    right: -26px;
+}
+.CI2{
+    position: relative;
+    right: -39px;
+}
+#CIB0{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    top: 215%;
+    left: 160px;
+    background: none;
+    border: none;
+    font-weight: normal;
+    color: #a5a5a5;
+}
+#CIB1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    top: 215%;
+    right: 160px;
+    background: none;
+    border: none;
+    font-weight: normal;
+}
