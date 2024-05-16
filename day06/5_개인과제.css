@@ -50,7 +50,10 @@ a{
 #HT input{
     background-color: #f5ff6b;
     border: none;
+<<<<<<< HEAD
     font-weight: bold;
+=======
+>>>>>>> 0c3f9888920d5b6fcafaeadb0b345c1dc8001339
 }
 #HT li img{
     width: 20px;
@@ -68,7 +71,11 @@ a{
 }
 #HBL{
     width: 155px;
+<<<<<<< HEAD
     margin-right: 20px;
+=======
+    margin-right: 10px;
+>>>>>>> 0c3f9888920d5b6fcafaeadb0b345c1dc8001339
 }
 #HBS  img{
     width: 18px;
@@ -160,10 +167,17 @@ a{
 }
 .CE{
     margin: 0 auto;
+<<<<<<< HEAD
     width: 300px;
     height: 0px;
     font-size: 13px;
     padding: 20px 0px 40px 0px;
+=======
+    width: 250px;
+    height: 0px;
+    font-size: 13px;
+    padding: 20px 0px;
+>>>>>>> 0c3f9888920d5b6fcafaeadb0b345c1dc8001339
     text-align: center;
     color: #999;
     font-weight: normal;
@@ -184,7 +198,11 @@ a{
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+<<<<<<< HEAD
     padding: 30px 0px 0px 0px;
+=======
+    padding: 30px 0px;
+>>>>>>> 0c3f9888920d5b6fcafaeadb0b345c1dc8001339
 }
 .CI0{
     position: relative;
@@ -220,6 +238,7 @@ a{
     background: none;
     border: none;
     font-weight: normal;
+<<<<<<< HEAD
 }
 .CIS{
     width: 300px;
@@ -427,4 +446,6 @@ a{
 }
 #P li:hover .PS{
     display: inline;
+=======
+>>>>>>> 0c3f9888920d5b6fcafaeadb0b345c1dc8001339
 }
