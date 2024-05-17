@@ -1,0 +1,21 @@
+*{ 
+    /* 글머리 제거 */
+    list-style-type: none; 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:"Noto Sans KR";
+    font-size: 12px;
+}  
+a{ 
+    /* a마크업의 밑줄제거,색상 검정*/
+    text-decoration: none; 
+    color: black;
+}
+/* 작업용 */
+/* *{
+    border: 1px solid red;
+} */
+#W{
+    width: 100%;
+}
