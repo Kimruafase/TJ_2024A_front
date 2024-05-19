@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <!--
+        1.  데이터 / 자료 종류
+            1)  문자 : " ", ' ', ` `
+            2)  숫자 : 10, -10, 10.0
+            3)  논리 : true, false
+            4)  배열 : [ data, data, data, ... ]
+
+        2. 출력 함수
+            1)  console.log( data )
+            2)  alert( data )
+            3)  document.write( data )
+            4)  document.마크업.innerHTML = data
+            *   document.querySelector('#id').innerHTML = data
+            *   document.querySelector('.class').innerHTML = data
+        
+        3.  입력 함수
+            1)  confirm( data )     >   T or F
+            2)  prompt( data )      >   T or F or input
+            3)  document.마크업.innerHTML
+            *   document.querySelector('#id').innerHTML
+            *   document.querySelector('.class').innerHTML
+
+        4.  변수와 상수
+            1)  선언 방법
+                >   변수 : let 변수명 = data
+                >   상수 : const 변수명 = data
+            2)  호출하는 방법
+                >   변수명, 상수명
+            3)  수정하는 방법 (only 변수)
+                >   변수명 = newData
+                >   변수명[ 인덱스 번호 ] = newData
+            4)  연산
+                >   변수A = 변수B + 변수C
+
+        5.  배열
+            >   순서대로 번호가 붙은 데이터들이 연속적인 형태로 구성된 구조의 데이터
+            >   인덱스  : 0번부터 시작 ~ N-1 까지
+            1)  배열 선언
+                >   let 변수명 = [ data, data, data, data, ... ]
+            2)  배열 호출
+                >   전체호출 = 변수명
+                >   특정 인덱스 데이터 호출 = 변수명[ 인덱스 번호 ]
+            3)  배열 수정
+                >   자체수정 : let 변수명 = newArray[]
+                >   특정 인덱스 데이터 수정 : 변수명[ 인덱스 번호 ] = newData
+            4)  배열과 관련된 라이브러리 함수
+                >   push
+                    - 변수명.push( data )
+                >   splice
+                    - 변수명.splice( 시작 인덱스, 삭제 개수 )
+                    - 변수명.splice( 시작 인덱스, 삭제 개수, newData )
+                >   indexOf
+                    - 변수명.indexOf( searchData )
+                >   length
+                    - 변수명.length
+    -->
+
+    <script>
+        //  예1 :   2개의 문자를 입력(prompt)받아 변수(let)에 저장 후 HTML 출력하시오.
+            //  prompt('input1 : ')     >   1.  입력받는다.
+            //  let input1 =            >   2.  저장한다.
+            //  document.write()        >   3.  HTML 출력한다.
+        // let input1 = prompt('input1 : ')
+        // let input2 = prompt('input2 : ')
+        // document.write(input1)
+        // document.write('<br/>')
+        // document.write(input2)
+
+        //  예2 :   국, 영, 수 점수 입력 받아서 배열 변수에 각 점수를 저장하여 HTML(li)형식으로 출력
+        let Score = []                      //  1.  배열 선언
+        let Korean = prompt('Korean : ')    //  2.  입력받은 데이터를 변수에 저장
+        let English = prompt('English : ')
+        let Math = prompt('Math : ')
+        Score.push(Korean)                  //  3.  배열에 데이터 ( 다른 변수의 값)을 저장한다.
+        Score.push(English)
+        Score.push(Math)
+        document.write('<ol>')
+            document.write('<li>'); document.write(Korean); document.write('</li>')
+            document.write('<li>' + English + '</li>')
+            document.write(`<li>${Math}</li>`)
+        document.write('</ol>')
+
+    </script>
+
+</body>
+</html>

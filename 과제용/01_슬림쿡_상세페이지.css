@@ -1,0 +1,58 @@
+*{ 
+    /* 글머리 제거 */
+    list-style-type: none; 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:"Nanum Gothic";
+    font-size: 12px;
+}  
+a{ 
+    /* a마크업의 밑줄제거,색상 검정*/
+    text-decoration: none; 
+    color: black;
+}
+/* 작업용 */
+*{
+    border: 1px solid red;
+} 
+#W{
+    width: 1450px;
+}
+#C{
+    width: 1100px;
+    margin: 0 auto;
+}
+#CDD{
+    font-size: 14px;
+    padding: 20px 0px;
+    margin: 10px 0px;
+    color: #46433F;
+}
+#CDD a{
+    font-size: 14px;
+    color: #878787;
+}
+#CCI img{
+    width: 500px;
+    height: 500px;
+}
+.CO0{
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.CO0 dt, .CO0 dd{
+    font-size: 16px;
+}
+.CS0{
+    font-size: 16px;
+    width: 400px;
+}
+#COP{
+    font-size: 16px;
+}
+#COP span{
+    font-size: 16px;
+    font-weight: bold;
+}
