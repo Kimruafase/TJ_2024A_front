@@ -10,9 +10,97 @@
 </head>
 <body>
     <div id="W">
-        <div>
-            헤드
+        <!-- 헤더 -->
+        <div id="skyEvent">
+            <div id="eventText"> <a href="#"> 3초만에 가입하고 샐러드 첫구매 100원! </a> </div>               
         </div>
+        <div id="xIcon"> <a href="#"> <img src="img/X_icon_w.svg"/> </a></div>
+        <div id="topMenu">
+            
+            <ul id="leftMenu">
+                <li>
+                    <a href="#"> My슬림쿡 ∨ </a>
+                    <ul class="subMenu">
+                        <li> <a href="#"> 회원정보 </a> </li>
+                        <li> <a href="#"> 주문내역 </a> </li>
+                        <li> <a href="#"> 쿠폰함 </a> </li>
+                        <li> <a href="#"> 출석체크 </a> </li>
+                        <li> <a href="#"> 내 게시글 </a> </li>
+                        <li> <a href="#"> 적립금내역 </a> </li>
+                        <li> <a href="#"> 관심상품 </a> </li>
+                        <li> <a href="#"> 오늘본상품 </a> </li>
+                        <li> <a href="#"> 배송조회 </a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> 커뮤니티 ∨ </a>
+                    <ul class="subMenu">
+                        <li> <a href="#"> 슬림쿡이 궁금해요 </a> </li>
+                        <li> <a href="#"> 공지사항 </a> </li>
+                        <li> <a href="#"> 상품리뷰 </a> </li>
+                        <li> <a href="#"> 자주하는 질문 </a> </li>
+                        <li> <a href="#"> 고객 문의 </a> </li>
+                    </ul>
+                </li>
+            </ul> 
+            <ul id="rightMenu">
+                <li>
+                    <a href="#"> 로그인 </a>
+                </li>
+                <li>
+                    <a href="silmcook_signup.html"> 회원가입</a>
+                </li>
+                <li>
+                    <a href="silmcook_cart.html"> 장바구니 <span id="blackBox"> 0 </span></a>
+                </li>
+                <li>
+                    <a href="#"> 고객센터 </a>
+                </li>
+                <li>
+                    <a href="#"> 주문조회 </a>
+                </li>
+                <li>
+                    <a href="#"> 택배운송조회 </a>
+                </li>
+            </ul> 
+
+        </div>
+        <div id="mainLogo"> <a href="#"><img id="logoImg" src="img/logo.png"/></a> </div>
+        <div id="mainMenu">
+            <div id="mainMenu2">
+                <ul>
+                    <li id="category">
+                        <a   href="#"> <img id="topmenuIcon" src="img/top_menu_icon.png" /> 카테고리 </a>
+                        <ul id="category1">
+                            <li> <a href="#"> 베스트 </a></li>
+                            <li> <a href="#"> 신상품 </a></li>
+                            <li> <a href="#"> 모든상품∨ </a></li>
+                        </ul>
+                        <ul id="category2">
+                            <li> <a href="#"> 정기배송 </a></li>
+                            <li> <a href="#"> 맞춤식단 </a></li>
+                            <li> <a href="#"> 샐러드 </a></li>
+                            <li> <a href="#"> 런치구독 </a></li>
+                            <li> <a href="#"> 샐럽위치/샌드위치 </a></li>
+                            <li> <a href="#"> 포케샐러드 </a></li>
+                            <li> <a href="#"> 간식/음료 </a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#"> 맞춤식단 </a> </li>
+                    <li> <a href="#"> 정기배송 </a> </li>
+                    <li> <a href="#"> 베스트 </a> </li>
+                    <li> <a href="#"> 이벤트 </a> </li>
+                    <li> <a href="#"> 슬림쿡 런치 </a> </li>
+                </ul>
+                <div id="searchBox">
+                    <input placeholder="검색어를 입력하세요." /> 
+                    <img id="searchIcon" src="img/search_icon.png" />
+                </div>
+            </div>
+        </div>
+    
+
+        <img id= mainImg src="img/main_pc.jpg"/>     <!-- 메인이미지 -->
         <div id="C">
             <div id="CDD">
                 <a href="#">
@@ -32,19 +120,22 @@
                     <div>
                         <img src="img/moobae.jpg" />
                     </div>
-                    <div>
+                    <div id="CCJ">
                         [정기배송] 2주동안 샐럽위치와 샐러드
                     </div>
-                    <div>
+                    <div id="CCS">
                         샐럽위치에 샐러드로 꾸준하게 관리해보세요!
                     </div>
-                    <div>
-                        <span>
+                    <div id="CCP0">
+                        <span id="CCP1">
                             14%
                         </span>
-                        67,400원
+                        <span id="CCP2">
+                            67,400
+                        </span>
+                        원
                     </div>
-                    <div>
+                    <div id="CCD">
                         78,200원
                     </div>
                     <div id="COW0">
@@ -225,7 +316,7 @@
                             </dl>
                         </div>
                     </div>
-                    <div>
+                    <div id="COP0">
                         <div id="COP">
                             <span>
                                 추가옵션
@@ -285,36 +376,91 @@
                         </div>
 
                     </div>
-                    <div>
-                        <div>
-                            크래미아&화이트소시지,크래미아&화이트소시지,머쉬룸갈릭치킨 샐러드,닭가슴살오징어 샐러드,택배배송
+                    <div id="CS">
+                        <div id="CS0">
+                            크래미아&화이트소시지,크래미아&화이트소시지,머쉬룸갈릭치킨 샐러드,<br>
+                            닭가슴살오징어 샐러드,택배배송
                         </div>
-                        <div>
+                        <div id="CSX">
                             <a href="#">
-                                <img src="img/X버튼.gif" />
+                                <img src="img/x버튼.png" />
                             </a>
                         </div>
-                        <div>
-                            <input type="text" value="1"/>
-                            <input type="button" value="+">
-                            <input type="button" value="-">
+                        <div id="CSB">
+                            <input type="text" value="1" id="CSBN"/>
+                            <input type="button" value="+" class="CSBP"/>
+                            <input type="button" value="-" class="CSBP"/>
                         </div>
-                        <div>
+                        <div id="CSP">
                             69,000원
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div id="CAP">
+                        <div id="CAP0">
                             총 상품 금액
                         </div>
+                        <div id="CAP1">
+                           <span id="CAP2">
+                                69,000
+                           </span> 
+                            원
+                        </div>
+                    </div>
+                    <div id="CBP">
                         <div>
-                            69,000원
+                            <input type="button" value="♡" id="CBP0"/>
+                        </div>
+                        <div>
+                            <input type="button" value="장바구니" id="CBP1"/>
+                        </div>
+                        <div>
+                            <input type="button" value="구매하기" id="CBP2"/>
+                        </div>
+                    </div>
+                    <div id="CK">
+                        <a href="#">
+                            <img src="img/kakao_A1.png"/>
+                        </a>
+                    </div>
+                    <div id="CNP">
+                        <div id="CNP0">
+                            <ul>
+                                <li>
+                                    <img src="img/네이버로고0.png" />
+                                </li>
+                                <li>
+                                    네이버ID로 간단구매
+                                </li>
+                                <li>
+                                    네이버페이
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="CNP1">
+                            <a href="#">
+                                <img src="img/네이버페이 구매.png" />
+                            </a>
+                        </div>
+                        <div id="CNP2">
+                            <input type="button" value="찜">
+                        </div>
+                    </div>
+                    <div id="CNPB">
+                        <div id="CNPB0">
+                            <span id="CNPBM">
+                                머니결제혜택
+                            </span>
+                            최대 3% 적립 + 소득공제
+                        </div>
+                        <div id="CNPB1">
+                            <input type="button" value="<">
+                            <input type="button" value=">">
                         </div>
                     </div>
                     <div>
                         <div>
-                            
-                        </div>
+
+                        </div>        
                     </div>
 
                 </div>
