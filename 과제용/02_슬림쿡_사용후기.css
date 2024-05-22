@@ -178,3 +178,222 @@ a{
     width: 100%;
     border-bottom: 1px solid #dbdbdb;
 }
+#mainImg{
+    vertical-align: middle;
+    width: 700px;
+}
+/*======================= 팝업 =======================*/
+#popupKakao{
+    position: fixed;
+    top: 88%;
+    right: 60px;
+}
+#popupMenu{
+    position: fixed;
+    bottom: 5%; right: 250px;
+    z-index: 1;
+}
+#popupMenu > ul > li{
+    width: 97px; height: 30px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    line-height: 220%;
+    text-align: center;
+
+}
+#popupMenu > ul > #first{ 
+    background-color: #00865A;
+    border: 1px solid #00865A;
+
+}
+#popupMenu > ul > #first > a{ color: white;}
+#contentWrap{ 
+    position: relative;
+    width: 100%; margin: 0px auto;
+}
+#popupMenu img{ 
+    width: 100px; height: 100px; 
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+    margin-top: 20px;
+}
+/*======================= 푸터 =======================*/
+#footer{ width: 100%; border-top: 1px solid #dbdbdb; margin: 0 auto;}
+#topFooter{ background-color: #f2f2f2; }
+#ftLeft{ width: 55%; padding-right: 50px;}
+#topftcontent{
+    width: 1100px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#ftNotice{
+    display: flex; justify-content: space-between;
+    padding-bottom: 20px;
+}
+#ftNotice > h3{ 
+    font-size: 24px; font-weight: bold;
+    letter-spacing: 2px;
+ }
+#ftNotice > a{ 
+    font-size: 14px; text-decoration: underline;
+    color: #7e7e7e; margin-top: 5px;
+}
+#ftLeft > ul > li{
+    display: flex; justify-content: space-between;
+    margin: 10px 0px;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 10px;
+}
+#ftLeft > ul > li > a{ font-size: 14px; letter-spacing: 1px; }
+#ftLeft > ul > li > p{ 
+    font-size: 14px; color: #7e7e7e;
+    letter-spacing: 1px;
+}
+#ftLeft a:hover{ font-weight: bold; text-decoration: underline; }
+#imporNotice{ font-weight: bold; }
+#ftright{
+    width: 45%;
+    display: flex; justify-content: space-between;
+    margin-left: 50px;
+}
+#ftright h3{
+    font-size: 20px; font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+#centerNum{
+    font-size: 20px; font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(0, 134, 90);
+}
+#ftright p{
+    font-size: 13px; line-height: 200%;
+    letter-spacing: 2px;
+}
+.ftBtn{
+    display: inline-block;
+    background-color: #2e2e2e; color: #fff;
+    width: 85px; height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.ftBtn a{
+    color: #fff; font-size: 14px;
+    padding: 10px;
+    line-height: 30px;
+}
+.ftBtn:hover #ftBtna{ text-decoration: underline; }
+#bottomFooter{
+    width: 1100px; margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+#bottomFooter h3{
+    font-size: 18px; font-family: '고딕';
+    margin-bottom: 10px;
+    color: #2e2e2e;
+}
+#bottomFooter p{
+    color: #2e2e2e; line-height: 180%;
+    letter-spacing: 1px; 
+    font-size: 13px;
+}
+#bottomFooter span{
+    color: #46433f; line-height: 180%;
+    letter-spacing: 1px; 
+    font-size: 13px; font-weight: bold;
+}
+#ftInfo{
+    padding-top: 20px;
+}
+#ftInfo p a{
+    font-size: 13px; color: #1c1c1c;
+    padding: 0 5px;
+}
+#bottomFooter > #lastft{ font-size: 14px; color: #999999; }
+#bottomFooter a:hover{ text-decoration: underline; }
+
+/*===================================본문 시작 =====================*/
+#C{
+    width: 1100px;
+    margin: 0 auto;
+}
+#mainImg{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+#CRW{
+    display: inline-block;
+    padding: 0 16px 80px;
+    width: 700px;
+    box-sizing: border-box;
+    background-color: #f6f5d6;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#CCATE{
+    margin: 40px 0px;
+    width: 1100px;
+    height: 60px;
+    background-color: #FAFAFA;
+    border: 1px solid #dadada;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#CBP2{
+    width: 570px;
+    height: 60px;
+    background-color: #00865A;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+}
+#CSTAR{
+    width: 530px;
+    height: 37px;
+    font-size: 12px;
+    background-color: white;    
+    border: 1px solid #e4e4e5;
+    margin-right: 10px;
+    font-weight: bold;
+    appearance: none;
+    -webkit-appearance: none;
+    background:url('../과제용/img/아래\ 화살표\ 아이콘.png')  no-repeat 98%;
+}
+#CSTAR1{
+    width: 170px;
+    height: 37px;
+    font-size: 12px;
+    background-color: white;    
+    border: 1px solid #e4e4e5;
+    margin-right: 10px;
+    font-weight: bold;
+    appearance: none;
+    -webkit-appearance: none;
+    background:url('../과제용/img/아래\ 화살표\ 아이콘.png')  no-repeat 98%;
+}
+#CCATEIN{
+    width: 114px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 5px;
+    border: 1px solid #dadada;
+    font-size: 14px;
+}
+#CSEARCH{
+    width: 52px;
+    height: 35px;
+    line-height: 37px;
+    border: 1px solid #000;
+    background: #3f4046;
+    color: #fff;
+    text-align: center;
+}
