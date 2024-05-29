@@ -138,10 +138,7 @@ function modal(index){
     });
 }
 function _delete(){
-    let deleteBtn = document.querySelector(`#deleteBtn`);
-    let modal = document.querySelector('.modal');
-    deleteBtn.addEventListener("click", ()=>{
-        modal.style.display="none";});
+    document.querySelector('.modal').style.display="none";
 }
 function reg(index){
     let content = document.querySelector(`#content`).value;
