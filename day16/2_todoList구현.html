@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        body{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #whiteBox{
+            margin: 0 auto;
+            padding: 20px;
+            align-items: center;
+            display: flex;
+            width: 750px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 10px;
+            color: black;
+        }
+        #blackBox{
+            margin: 0 auto;
+            padding: 20px;
+            align-items: center;
+            display: flex;
+            width: 750px;
+            height: 100px;
+            background-color:black;
+            color: white;
+            border-radius: 10px;
+        }
+        #whiteBox > span{
+            width: 85%;
+            font-size: 30px;
+            
+        }
+        #blackBox > span{
+            width: 85%;
+            font-size: 30px;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        My To Do List
+    </h3>
+    <input type="text" id="todoInput"/>
+    <button type="button" onclick="add()"> 등록 </button>
+    <div id="todoBox">
+        
+    </div>
+    <script src='2_todoList구현.js'></script>
+</body>
+</html>

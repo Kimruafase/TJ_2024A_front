@@ -69,9 +69,8 @@ function _cart(index){
 
 function 등록1(){
    let 카테고리추가 =  document.querySelector('#카테고리추가').value;
-   let html = '';
-   
-   let CTADD = {no : a++ , 카테고리명 : `${카테고리추가}`, 가격 : '6000'}
+   let price = prompt(`가격 입력 : `);
+   let CTADD = {no : a++ , 카테고리명 : `${카테고리추가}`, 가격 : `${price}`};
 
    category.push(CTADD);
    console.log(category);
