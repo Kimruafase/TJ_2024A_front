@@ -6,9 +6,9 @@
 
 */
 
-hrList = [{"hrNum" : "사원코드", "name" : "이름", "birth" : "생년월일"}];
-deptList = [{"deptNum" : "부서코드", "deptName" : "부서명", "contact" : "대표 연락처"}];
-deptInfoList = [{"hrNum" : "사원코드", "deptNum" : "부서코드", "deptDay" : "부서 배정일", "status" : "상태(T/F)"}];
+let hrList = [{"hrNum" : "사원코드", "name" : "이름", "birth" : "생년월일"}];
+let deptList = [{"deptNum" : "부서코드", "deptName" : "부서명", "contact" : "대표 연락처"}];
+let deptInfoList = [{"hrNum" : "사원코드", "deptNum" : "부서코드", "deptDay" : "부서 배정일", "status" : "상태(T/F)"}];
 
 let deptNum = 1;
 let hrNum = 1;
@@ -34,7 +34,6 @@ function deptInfoReg(){
 
     deptInfoList.push(deptInfo);
     console.log(deptInfoList);
-
     deptInfoPrint();
 }
 deptInfoPrint();
@@ -51,10 +50,42 @@ function deptInfoPrint(){
     let html02 = `<select class="form-select" id="deptNum">`;
     for(i=0; i<deptList.length; i++){
         html02 +=`<option value="${deptList[i].deptNum}">${deptList[i].deptName}</option>`;
-        console.log(deptList[i]);
     }
     html02 += `</select>`;
-
+    console.log(deptList);
     select1.innerHTML = html01;
     select2.innerHTML = html02;
+}
+// 삭제(D)
+function _delete(){
+    let index = prompt(`삭제할 리스트(0~2)`);
+    let deleteNum = prompt(`삭제할 코드`);
+    if(index == 0){
+        for(i=0; i<hrList.length; i++){
+            if(deleteNum == hrList[i].hrNum){
+                hrList.splice(i,1);
+            }
+        }
+    }else if(index == 1){
+        for(i=0; i<deptList.length; i++){
+        if(deleteNum == deptList[i].deptNum){
+            deptList.splice(i,1);
+            }
+        }
+    }else if(index == 2){
+        for(i=0; i<deptInfoList.length; i++){
+        if(deleteNum == deptInfoList[i].deptNum || deleteNum == deptInfoList[i].hrNum){
+            deptInfoList.splice(i,1);
+            }
+        }   
+    }else{
+        alert(`리스트를 찾을 수 없습니다.`)
+    }
+    
+    console.log(deptList);
+    console.log(deptInfoList);
+}
+
+function listUpdate(){
+
 }

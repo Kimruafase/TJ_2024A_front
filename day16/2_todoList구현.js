@@ -46,5 +46,5 @@ function change(index){
 }
 function remove(index){
     todoList.splice(index,1);                                      // 배열 내 특정 i번째 인덱스의 요소 삭제
-    print();           
+    print();
 }
