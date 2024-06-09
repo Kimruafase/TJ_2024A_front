@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body > div{
+            display: flex;
+        }
+        body > div > div{
+            width: 50%;
+            border: 1px solid black;
+            padding: 50px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        <div>
+            <h3>
+                회원가입
+            </h3>
+            아이디 : <input type="text" id="signupId"> <br>
+            비밀번호 : <input type="text" id="signupPw"> <br>
+            <button onclick="signup()" type="button"> 회원 가입 </button>
+        </div>
+        <div>
+            <h3>
+                로그인
+            </h3>
+            아이디 : <input type="text" id="loginId"> <br>
+            비밀번호 : <input type="text" id="loginPw"> <br>
+            <button onclick="login()" type="button"> 회원 가입 </button>
+        </div>
+    </div>
+    <script src='1_회원가입구현.js'></script>
+</body>
+</html>

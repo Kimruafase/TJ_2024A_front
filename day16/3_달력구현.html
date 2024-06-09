@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel ='stylesheet' type='text/css' media="screen" href="3_달력구현.css">
+    <style>
+        #제목{
+            display: flex;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="wrap">
+        <h3>
+            나만의 일정 달력
+        </h3>
+        <div id="calWrap">
+            
+            <div id="calTop">
+                <button onclick="monthChange(0)"> ◀</button>
+                <h5> 2024년 5월 </h5>
+                <button onclick="monthChange(1)"> ▶</button>
+            </div>
+            
+            <div id="calender">
+               
+            </div>
+            <div class="modal">
+                <div class="modal_body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src='3_달력구현.js'></script>
+</body>
+</html>
